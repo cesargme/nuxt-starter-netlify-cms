@@ -1,11 +1,38 @@
 <template>
-  <div class="flex justify-center bg-sky">
-    <div class="flex flex-col justify-center">
+  <div class="mx-auto flex justify-center bg-sky-100">
+    <div class="prose flex flex-col justify-center">
       <div class="basis-2/4 font-serif text-neutral-500 text-1xl lg:text-2xl">
         La Dra. Julia Méndez
       </div>
-      <h1 class="basis-1/4">Te da la bienvenida</h1>
-      <div class="basis-1/4">hola</div>
+
+      <h1
+        class="
+          my-4
+          text-2xl
+          md:text-4xl
+          font-bold
+          text-neutral-600
+          mt-0
+          mb-0
+          md:mt-4 md:mb-4
+        "
+      >
+        Te da la bienvenida
+      </h1>
+      <p
+        class="
+          leading-normal
+          text-2xl
+          mb-8
+          text-neutral-700 text-center
+          md:text-left
+        "
+      >
+        Especialista en problemas de
+        <span class="text-sky-600 font-bold"
+          >columna, pies, lenguaje y aprendizaje</span
+        >
+      </p>
     </div>
     <div class="flex">
       <img
