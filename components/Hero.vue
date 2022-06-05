@@ -1,21 +1,25 @@
 <template>
-  <div class="flex justify-center h-hero">
-    <img :src="image" class="object-cover w-screen" />
-    <div class="absolute">
-      <div class="flex flex-col justify-center space-y-4 h-hero">
-        <h2
-          v-if="heading"
-          class="px-4 text-2xl font-extrabold text-white bg-kaldi sm:text-3xl md:text-4xl"
-        >
-          {{ heading }}
-        </h2>
-        <h3
-          v-if="subheading"
-          class="px-4 text-lg text-white bg-kaldi sm:text-xl md:text-2xl"
-        >
-          {{ subheading }}
-        </h3>
+  <div class="flex justify-center bg-sky">
+    <div class="flex flex-col justify-center">
+      <div class="basis-2/4 font-serif text-neutral-500 text-1xl lg:text-2xl">
+        La Dra. Julia Méndez
       </div>
+      <h1 class="basis-1/4">Te da la bienvenida</h1>
+      <div class="basis-1/4">hola</div>
+    </div>
+    <div class="flex">
+      <img
+        class="
+          object-cover object-top
+          h-64
+          w-64
+          rounded-full
+          shadow-lg
+          bg-white
+        "
+        src="img/hero.png"
+        alt=""
+      />
     </div>
   </div>
 </template>
