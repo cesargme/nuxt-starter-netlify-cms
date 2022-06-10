@@ -19,7 +19,7 @@
 <script>
 export default {
   async asyncData({ $content, params: { slug } }) {
-    const post = await $content('blog', slug).fetch()
+    const post = await $content('consejos', slug).fetch()
     return {
       post,
     }

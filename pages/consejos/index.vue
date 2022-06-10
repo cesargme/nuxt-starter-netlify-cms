@@ -11,13 +11,13 @@
           class="px-6 border rounded-lg shadow"
         >
           <h3>
-            <nuxt-link :to="`/blog/${post.slug}`">{{ post.title }}</nuxt-link>
+            <nuxt-link :to="`/consejos/${post.slug}`">{{ post.title }}</nuxt-link>
           </h3>
           <p>
             {{ post.description }}
           </p>
           <p>
-            <nuxt-link :to="`/blog/${post.slug}`">Read more</nuxt-link>
+            <nuxt-link :to="`/consejos/${post.slug}`">Read more</nuxt-link>
           </p>
         </div>
       </div>
@@ -28,7 +28,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
+    const posts = await $content('consejos').fetch()
     return {
       posts,
     }

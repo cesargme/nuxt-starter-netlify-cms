@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto flex justify-center bg-sky-100">
+  <div class="py-20 mx-auto flex justify-center bg-sky-100">
     <div class="prose flex flex-col justify-center">
       <div class="basis-2/4 font-serif text-neutral-500 text-1xl lg:text-2xl">
         La Dra. Julia Méndez
@@ -48,7 +48,11 @@
         alt=""
       />
     </div>
+
   </div>
+
+
+  
 </template>
 
 <script>
