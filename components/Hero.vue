@@ -33,6 +33,8 @@
           >columna, pies, lenguaje y aprendizaje</span
         >
       </p>
+
+      <p>20 años de experiencia</p>
     </div>
     <div class="flex">
       <img

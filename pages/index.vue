@@ -20,12 +20,16 @@
         md:prose-md
       "
     >
-      <h3>
+      <h3 class="text-center">
         {{ page.mainpitch.title }}
+        <p>
+          {{ page.dirección.calle }}
+        </p>
+        <p>
+          {{ page.dirección.urb }}
+        </p>
       </h3>
-      <p>
-        {{ page.mainpitch.description }}
-      </p>
+      <img :src="page.dirección.foto" alt="" />
       <h2>
         {{ page.title }}
       </h2>
@@ -77,7 +81,12 @@
           See all products
         </nuxt-link>
       </p>
-      <h2>Latest stories</h2>
+      <h1 class="text-center p-16 text-neutral-600">
+        Prevención de discapacidades
+      </h1>
+      <h2 class="text-neutral-600">
+        <span class="text-sky-600">💡Consejos</span> para cuidar tu salud
+      </h2>
       <div class="lg:grid lg:grid-cols-2 lg:gap-8">
         <div
           v-for="(post, index) in posts"
@@ -85,19 +94,21 @@
           class="px-6 border rounded-lg shadow"
         >
           <h3>
-            <nuxt-link :to="`/blog/${post.slug}`">{{ post.title }}</nuxt-link>
+            <nuxt-link :to="`/consejos/${post.slug}`">{{
+              post.title
+            }}</nuxt-link>
           </h3>
           <p>
             {{ post.description }}
           </p>
           <p>
-            <nuxt-link :to="`/blog/${post.slug}`">Read more</nuxt-link>
+            <nuxt-link :to="`/consejos/${post.slug}`">Read more</nuxt-link>
           </p>
         </div>
       </div>
       <p class="text-center">
         <nuxt-link
-          to="/blog"
+          to="/consejos"
           class="
             inline-flex
             items-center
@@ -118,7 +129,7 @@
             active:text-gray-800 active:bg-gray-50
           "
         >
-          Read more
+          ❕Saber más
         </nuxt-link>
       </p>
     </div>
@@ -132,7 +143,7 @@ export default {
   components: { onda },
   async asyncData({ $content }) {
     const page = await $content('index').fetch()
-    const posts = await $content('blog').fetch()
+    const posts = await $content('consejos').fetch()
 
     return {
       page,

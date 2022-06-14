@@ -1,10 +1,15 @@
 ---
+dirección:
+  calle: Jr. Manuel Arrisueño 638
+  urb: Santa Catalina
+  distrito: La Victoria
+  foto: img/arrisueño1.png
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great LOLOLO with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
-  title: Atención esmerada
+  title: 🏚️Encuentra el consultorio👇🏽
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans

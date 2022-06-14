@@ -241,7 +241,7 @@
                   Products
                 </nuxt-link>
                 <nuxt-link
-                  to="/blog"
+                  to="/consejos"
                   class="
                     text-base
                     font-medium
@@ -254,7 +254,7 @@
                   "
                   @click.native="toggleMenu"
                 >
-                  Blog
+                  consejos
                 </nuxt-link>
                 <nuxt-link
                   to="/contact"
